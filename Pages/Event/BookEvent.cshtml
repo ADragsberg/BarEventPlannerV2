@@ -1,5 +1,5 @@
 ﻿@page
-@model BarEventPlannerV1.Pages.Event.BookEventModel
+@model BarEventPlannerV2.Pages.Event.BookEventModel
 @{
 }
 <h1>BookEvent</h1>
@@ -47,7 +47,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <label asp-for="@Model.Event."
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="true" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+                </div>
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault2">Nej</label>
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="false" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                </div>
             </div>
         </div>
     </div>
