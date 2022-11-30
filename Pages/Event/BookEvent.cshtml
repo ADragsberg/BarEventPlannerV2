@@ -1,0 +1,30 @@
+﻿@page
+@model BarEventPlannerV1.Pages.Event.BookEventModel
+@{
+}
+<h1>BookEvent</h1>
+
+<h2>Hvem er du?</h2>
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Fornavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Fornavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Fornavn" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Efternavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Efternavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Efternavn" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Bestil</button>
+</form>
