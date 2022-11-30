@@ -18,6 +18,11 @@
         public string Titel { get; set; }
 
         /// <summary>
+        /// Er eventet privat eller offentligt.
+        /// </summary>
+        public bool PrivatEvent { get; set; }
+
+        /// <summary>
         /// Beskrivelse af eventet.
         /// </summary>
         public string Beskrivelse { get; set; }
@@ -26,6 +31,16 @@
         /// Datoen af eventet.
         /// </summary>
         public DateTime Dato { get; set; }
+
+        /// <summary>
+        /// Start tidspunkt på eventet.
+        /// </summary>
+        public DateTime StartTidspunkt { get; set; }
+
+        /// <summary>
+        /// Slut tidspunkt på eventet.
+        /// </summary>
+        public DateTime SlutTidspunkt { get; set; }
 
         /// <summary>
         /// Tidsrum for eventet.
@@ -54,14 +69,16 @@
         /// <param name="dato"></param>
         /// <param name="tidsrum"></param>
         /// <param name="image"></param>
-        public Event(int id, string titel, string beskrivelse, DateTime dato, TimeSpan tidsrum, string image)
+        public Event(int id, string titel, bool privatEvent, string beskrivelse, DateTime dato, TimeSpan tidsrum, string image)
         {
             Id = id;
             Titel = titel;
+            PrivatEvent = privatEvent;
             Beskrivelse = beskrivelse;
             Dato = dato;
             Tidsrum = tidsrum;
             Image = image;
+
         }
 
     }
