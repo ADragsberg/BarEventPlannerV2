@@ -8,6 +8,8 @@
 
 <form method="post">
     <div class="container">
+		
+		@*For- og efternavn Row*@
         <div class="row">
             <div class="col">
                 <div class="form-group">
@@ -24,6 +26,8 @@
                 </div>
             </div>
         </div>
+
+		@*Email og telefonnummer Row*@
         <div class="row">
             <div class="col">
                 <div class="form-group">
@@ -42,11 +46,15 @@
         </div>
     </div>
 
+    @*Start på event detaljer*@
     <h2>Book event</h2>
 
     <div class="container">
+		
+		@*Privat/offentlig og antal gæster Row*@
         <div class="row">
             <div class="col">
+				<p>Privat / Offentlig - Event</p>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
                     <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="true" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
@@ -56,7 +64,15 @@
                     <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="false" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                 </div>
             </div>
-        </div>
+			<div class="col">
+                <div class="form-group form-group-inline">
+                    <label asp-for="@Model.Event.AntalPersoner" class="control-label"></label>
+                        <input asp-for="@Model.Event.AntalPersoner" class="form-control" />
+                        <span asp-validation-for="@Model.Event.AntalPersoner" class="text-danger"></span>
+                </div>
+            </div>
+            
+		</div>
     </div>
 
     <button type="submit" class="btn btn-primary">Bestil</button>

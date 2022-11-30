@@ -23,6 +23,11 @@
         public bool PrivatEvent { get; set; }
 
         /// <summary>
+        /// Antal af forventede personer til event.
+        /// </summary>
+        public int AntalPersoner { get; set; }
+
+        /// <summary>
         /// Beskrivelse af eventet.
         /// </summary>
         public string Beskrivelse { get; set; }
