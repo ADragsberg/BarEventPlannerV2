@@ -24,6 +24,32 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Email" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Email" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Telefonnummer" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Telefonnummer" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Telefonnummer" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Book event</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label asp-for="@Model.Event."
+            </div>
+        </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Bestil</button>

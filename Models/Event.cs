@@ -1,4 +1,4 @@
-﻿namespace BarEventPlannerV1.Models.Event
+﻿namespace BarEventPlannerV2.Models
 {
     // TODO: ikke abstrakt endnu. Skal nok have flere properties/felter i fremtiden.
 

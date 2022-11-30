@@ -1,4 +1,4 @@
-﻿namespace BarEventPlannerV1.Models
+﻿namespace BarEventPlannerV2.Models
 {
     public class Kunde: Personoplysninger
         // Skrevet af Andreas Dragsberg

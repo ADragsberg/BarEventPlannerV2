@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BarEventPlannerV1.Models
+namespace BarEventPlannerV2.Models
 {
     public abstract class Personoplysninger
         //Skrevet af Andreas Dragsberg
