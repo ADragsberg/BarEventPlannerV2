@@ -33,11 +33,6 @@
         public string Beskrivelse { get; set; }
 
         /// <summary>
-        /// Datoen af eventet.
-        /// </summary>
-        public DateTime Dato { get; set; }
-
-        /// <summary>
         /// Start tidspunkt på eventet.
         /// </summary>
         public DateTime StartTidspunkt { get; set; }
