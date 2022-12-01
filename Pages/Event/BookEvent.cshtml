@@ -111,10 +111,26 @@
 
         </div>
 
-
-        
-		
+        @*Beskrivelse og kommentar boks *@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.Beskrivelse" class="control-label" for="FormControlInput1"></label>
+                    <textarea asp-for="@Model.Event.Beskrivelse" class="form-control" id="FormControlInput1" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Event.Beskrivelse" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.Kommentar" class="control-label" for="FormControlInput2"></label>
+                    <textarea asp-for="@Model.Event.Kommentar" class="form-control" id="FormControlInput2" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Event.Kommentar" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Bestil</button>
+    <button type="submit" class="btn btn-primary mt-3">Bestil</button>
 </form>
