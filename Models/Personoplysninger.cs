@@ -25,7 +25,7 @@ namespace BarEventPlannerV2.Models
 
         [EmailAddress]
         public string Email     { get; set; }
-        [Phone]
+        
         public int Telefonnummer { get; set; }    
 
 

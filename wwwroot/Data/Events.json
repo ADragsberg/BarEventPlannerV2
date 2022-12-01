@@ -20,5 +20,16 @@
     "StartTidspunkt": "0001-01-01T00:00:00",
     "SlutTidspunkt": "0001-01-01T00:00:00",
     "Tidsrum": "1.00:00:00"
+  },
+  {
+    "Id": 0,
+    "Titel": "Kenneds svingerparty",
+    "PrivatEvent": false,
+    "AntalPersoner": 5,
+    "Beskrivelse": "kl\u00E6akldsklwlmeewqmdqonwoiqmdsq",
+    "Kommentar": "klwqjkldmsqklqwnowqnjwfhioqfiqwonqw",
+    "StartTidspunkt": "2022-12-15T17:30:00",
+    "SlutTidspunkt": "2022-12-16T19:30:00",
+    "Tidsrum": "00:00:00"
   }
 ]

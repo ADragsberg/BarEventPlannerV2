@@ -29,7 +29,13 @@ namespace BarEventPlannerV2.Pages.Event
 
         public IActionResult OnPost()
         {
-            return Page();
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _eventService.CreateEvent(Event);
+            return RedirectToPage("/Index");
         }
     }
 }
