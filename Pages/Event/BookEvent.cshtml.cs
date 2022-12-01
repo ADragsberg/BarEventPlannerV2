@@ -26,5 +26,10 @@ namespace BarEventPlannerV2.Pages.Event
             return Page();
 ;
         }
+
+        public IActionResult OnPost()
+        {
+            return Page();
+        }
     }
 }
