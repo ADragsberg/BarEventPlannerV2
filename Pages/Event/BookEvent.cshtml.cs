@@ -35,7 +35,7 @@ namespace BarEventPlannerV2.Pages.Event
             }
 
             _eventService.CreateEvent(Event);
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Event/EventBetalt");
         }
     }
 }
