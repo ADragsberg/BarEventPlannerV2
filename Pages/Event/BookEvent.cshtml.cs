@@ -24,6 +24,7 @@ namespace BarEventPlannerV2.Pages.Event
         public IActionResult OnGet()
         {
             return Page();
+;
         }
     }
 }
