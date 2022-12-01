@@ -69,14 +69,13 @@
         /// <param name="dato"></param>
         /// <param name="tidsrum"></param>
         /// <param name="image"></param>
-        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, DateTime dato, TimeSpan tidsrum, string image)
+        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, TimeSpan tidsrum, string image)
         {
             Id = id;
             AntalPersoner = antalPersoner;
             Titel = titel;
             PrivatEvent = privatEvent;
             Beskrivelse = beskrivelse;
-            Dato = dato;
             Tidsrum = tidsrum;
             Image = image;
 
