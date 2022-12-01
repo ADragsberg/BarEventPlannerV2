@@ -8,11 +8,11 @@ namespace BarEventPlannerV2.Pages.Event
 {
     public class BookEventModel : PageModel
     {
-        //private IEventService _eventService;
-        //public BookEventModel(IEventService eventService)
-        //{
-        //    _eventService = eventService;
-        //}
+        private IEventService _eventService;
+        public BookEventModel(IEventService eventService)
+        {
+            _eventService = eventService;
+        }
 
         [BindProperty]
         public Models.Kunde Kunde { get; set; }
