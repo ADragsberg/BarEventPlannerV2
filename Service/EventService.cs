@@ -1,7 +1,7 @@
 ﻿namespace BarEventPlannerV2.Service
 {
-    public class EventService : IEventService
-    {
+    //public class EventService : IEventService
+    //{
         
-    }
+    //}
 }
