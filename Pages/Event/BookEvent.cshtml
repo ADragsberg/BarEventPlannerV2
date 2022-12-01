@@ -4,13 +4,16 @@
 }
 <h1>BookEvent</h1>
 
-<h2>Hvem er du?</h2>
+
 
 <form method="post">
     <div class="container">
+
+        <h2 style="text-align:center">Hvem er du?</h2>
+        
 		
 		@*For- og efternavn Row*@
-        <div class="row">
+        <div class="row mt-3">
             <div class="col">
                 <div class="form-group">
                     <label asp-for="@Model.Kunde.Fornavn" class="control-label"></label>
@@ -28,7 +31,7 @@
         </div>
 
 		@*Email og telefonnummer Row*@
-        <div class="row">
+        <div class="row mt-3">
             <div class="col">
                 <div class="form-group">
                     <label asp-for="@Model.Kunde.Email" class="control-label"></label>
@@ -46,14 +49,15 @@
         </div>
     </div>
 
+	
     @*Start på event detaljer*@
-    <h2>Book event</h2>
-
-    <div class="container">
+	
+    <div class="container mt-5">
+        <h2 style="text-align:center">Book event</h2>
 		
 		@*Privat/offentlig og antal gæster Row*@
-        <div class="row">
-            <div class="col">
+        <div class="row mt-3">
+            <div class="col inl">
 				<p>Privat / Offentlig - Event</p>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
@@ -75,7 +79,7 @@
 		</div>
 
         @*Row med Titel og Dag/Dato*@
-        <div class="row">
+        <div class="row mt-3">
             <div class="col">
                 <div class="form-group">
                     <label asp-for="@Model.Event.Titel" class="control-label"></label>
@@ -87,7 +91,8 @@
 
         </div>
 
-        <div class="row">
+        @*Row med Start- og Sluttidspunkt*@
+        <div class="row mt-3">
             <div class="col">
                 <div class="form-group">
                     <label asp-for="@Model.Event.StartTidspunkt" class="control-label">Starttidspunkt</label>
