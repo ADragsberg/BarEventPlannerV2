@@ -50,7 +50,7 @@
         /// <summary>
         /// Billede/ikon til eventet.
         /// </summary>
-        public string Image { get; set; }
+        //public string Image { get; set; }
 
         /// <summary>
         /// Konstruktør for EventBase.
@@ -68,8 +68,8 @@
         /// <param name="beskrivelse"></param>
         /// <param name="dato"></param>
         /// <param name="tidsrum"></param>
-        /// <param name="image"></param>
-        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, TimeSpan tidsrum, string image)
+        ///// <param name="image"></param>
+        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, TimeSpan tidsrum)
         {
             Id = id;
             AntalPersoner = antalPersoner;
@@ -77,7 +77,6 @@
             PrivatEvent = privatEvent;
             Beskrivelse = beskrivelse;
             Tidsrum = tidsrum;
-            Image = image;
 
         }
 
