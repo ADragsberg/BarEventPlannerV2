@@ -33,6 +33,11 @@
         public string Beskrivelse { get; set; }
 
         /// <summary>
+        /// Kommentarer til eventet.
+        /// </summary>
+        public string Kommentar { get; set; }
+
+        /// <summary>
         /// Start tidspunkt på eventet.
         /// </summary>
         public DateTime StartTidspunkt { get; set; }
@@ -53,7 +58,7 @@
         //public string Image { get; set; }
 
         /// <summary>
-        /// Konstruktør for EventBase.
+        /// Konstruktør for Event.
         /// </summary>
         public Event()
         {
@@ -69,13 +74,14 @@
         /// <param name="dato"></param>
         /// <param name="tidsrum"></param>
         ///// <param name="image"></param>
-        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, TimeSpan tidsrum)
+        public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, string kommentar, TimeSpan tidsrum)
         {
             Id = id;
             AntalPersoner = antalPersoner;
             Titel = titel;
             PrivatEvent = privatEvent;
             Beskrivelse = beskrivelse;
+            Kommentar = kommentar;
             Tidsrum = tidsrum;
 
         }
