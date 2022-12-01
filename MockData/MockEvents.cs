@@ -10,5 +10,9 @@ namespace BarEventPlannerV2.MockData
             new Event(1, 20, "Børges Børnefødselsdag", true, "Børge har fødselsdag kom med gaver og få masser af lagkage","det bliver fe", new TimeSpan(4,30,0)),
             new Event(2, 100, "Dorits drukfest", false, "Kom alle, kom glade. Der skal drikkes","druk druk druk", wholeDay)
                     };
+        public List<Event> GetMockEvents()
+        {
+            return _items;
+        }
     }
 }
