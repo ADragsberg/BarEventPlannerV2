@@ -2,14 +2,14 @@
 @model BarEventPlannerV2.Pages.Event.BookEventModel
 @{
 }
-<h1>BookEvent</h1>
+<h1 style="text-align:center" class="mb-4">BookEvent</h1>
 
 
 
 <form method="post">
     <div class="container">
 
-        <h2 style="text-align:center">Hvem er du?</h2>
+        <h5 style="text-align:center">Hvem er du?</h5>
         
 		
 		@*For- og efternavn Row*@
@@ -53,7 +53,7 @@
     @*Start på event detaljer*@
 	
     <div class="container mt-5">
-        <h2 style="text-align:center">Book event</h2>
+        <h5 style="text-align:center">Book event</h5>
 		
 		@*Privat/offentlig og antal gæster Row*@
         <div class="row mt-3">
@@ -132,5 +132,17 @@
         </div>
     </div>
 
-    <button type="submit" class="btn btn-primary mt-3">Bestil</button>
+    
+    <div class="row">
+        <div class="col-5">
+
+        </div>
+        <div class="col-6">
+            <button type="submit" class="btn btn-success mt-3 px-3 d-inline">Bestil</button>
+            <button type="reset" class="btn btn-danger mt-3 d-inline">Annuller</button>
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+    
 </form>
