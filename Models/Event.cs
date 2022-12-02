@@ -31,6 +31,7 @@ namespace BarEventPlannerV2.Models
         /// Antal af forventede personer til event.
         /// </summary>
         [Required(ErrorMessage = "Der skal angives antal Personer til et Event")]
+        [Range(typeof(int), "0", "100", ErrorMessage = "Antal af Personer skal være mellem {1} og {2}")]
         public int? AntalPersoner { get; set; }
 
         /// <summary>
