@@ -1,11 +1,14 @@
 using BarEventPlannerV2.Service;
+using BarEventPlannerV2.Service.Repositories.Implementation;
+using BarEventPlannerV2.Service.Repositories.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<IEventService,EventService>();
-builder.Services.AddTransient<JSONFileEventService>();
+builder.Services.AddSingleton<IEventRepository, EventRepository>();
+//builder.Services.AddSingleton<IEventService,EventService>();
+//builder.Services.AddTransient<JSONFileEventService>();
 
 var app = builder.Build();
 

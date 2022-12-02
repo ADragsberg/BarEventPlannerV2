@@ -1,4 +1,6 @@
 ﻿using BarEventPlannerV2.Service.Repositories.Interface;
+using System.Xml.Linq;
+
 namespace BarEventPlannerV2.Models
 {
     // TODO: Skal nok have flere properties/felter i fremtiden.
@@ -6,7 +8,7 @@ namespace BarEventPlannerV2.Models
     /// <summary>
     /// Base klasse for alle events (ikke abstrakt endnu).
     /// </summary>
-    public class Event : IHasId
+    public class Event : IHasId, IUpdateFromOther<Event>
     {
         /// <summary>
         /// Unikt Id for eventet.
@@ -16,7 +18,7 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Titel på eventet.
         /// </summary>
-        public string Titel { get; set; }
+        public string? Titel { get; set; }
 
         /// <summary>
         /// Er eventet privat eller offentligt.
@@ -31,12 +33,12 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Beskrivelse af eventet.
         /// </summary>
-        public string Beskrivelse { get; set; }
+        public string? Beskrivelse { get; set; }
 
         /// <summary>
         /// Kommentarer til eventet.
         /// </summary>
-        public string Kommentar { get; set; }
+        public string? Kommentar { get; set; }
 
         /// <summary>
         /// Start tidspunkt på eventet.
@@ -87,6 +89,11 @@ namespace BarEventPlannerV2.Models
             Kommentar = kommentar;
             Tidsrum = tidsrum;
 
+        }
+
+        public void Update(Event tOther)
+        {
+        //TODO
         }
 
     }
