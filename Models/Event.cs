@@ -1,4 +1,5 @@
 ﻿using BarEventPlannerV2.Service.Repositories.Interface;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
 namespace BarEventPlannerV2.Models
@@ -18,21 +19,24 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Titel på eventet.
         /// </summary>
+        [Required(ErrorMessage = "Der skal angives en Titel til et Event")]
         public string? Titel { get; set; }
 
         /// <summary>
         /// Er eventet privat eller offentligt.
         /// </summary>
-        public bool PrivatEvent { get; set; }
+        public bool? PrivatEvent { get; set; }
 
         /// <summary>
         /// Antal af forventede personer til event.
         /// </summary>
-        public int AntalPersoner { get; set; }
+        [Required(ErrorMessage = "Der skal angives antal Personer til et Event")]
+        public int? AntalPersoner { get; set; }
 
         /// <summary>
         /// Beskrivelse af eventet.
         /// </summary>
+        [Required(ErrorMessage = "Der skal angives en Beskrivelse af Eventet")]
         public string? Beskrivelse { get; set; }
 
         /// <summary>
@@ -43,19 +47,21 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Start tidspunkt på eventet.
         /// </summary>
-        public DateTime StartTidspunkt { get; set; }
+        [Required(ErrorMessage = "Der skal angives et Starttidspunkt til et Event")]
+        public DateTime? StartTidspunkt { get; set; }
 
         /// <summary>
         /// Slut tidspunkt på eventet.
         /// </summary>
-        public DateTime SlutTidspunkt { get; set; }
+        [Required(ErrorMessage = "Der skal angives et Sluttidspunkt til et Event")]
+        public DateTime? SlutTidspunkt { get; set; }
 
         /// <summary>
         /// Tidsrum for eventet.
         /// </summary>
-        public TimeSpan Tidsrum { get; set; }
+        public TimeSpan? Tidsrum { get; set; }
 
-        public bool Godkendt { get ; set; }
+        public bool? Godkendt { get ; set; }
 
         /// <summary>
         /// Billede/ikon til eventet.
