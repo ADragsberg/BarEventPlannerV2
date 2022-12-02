@@ -82,5 +82,17 @@
     "SlutTidspunkt": "8754-04-06T06:23:00",
     "Tidsrum": "00:00:00",
     "Godkendt": false
+  },
+  {
+    "Id": 8,
+    "Titel": "hhga",
+    "PrivatEvent": true,
+    "AntalPersoner": 18,
+    "Beskrivelse": "dsdsdv",
+    "Kommentar": "dvfvv",
+    "StartTidspunkt": "7777-02-13T11:11:00",
+    "SlutTidspunkt": "9999-03-31T09:09:00",
+    "Tidsrum": null,
+    "Godkendt": false
   }
 ]
