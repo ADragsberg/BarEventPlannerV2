@@ -4,11 +4,11 @@
         // Skrevet af Andreas Dragsberg
     {
 
-        public Kunde(string fornavn, string efternavn, string email, int telefonnummer)
-            : base ( fornavn, efternavn, email, telefonnummer )
-        {
+        //public Kunde(string fornavn, string efternavn, string email, int telefonnummer)
+        //    : base ( fornavn, efternavn, email, telefonnummer )
+        //{
 
-        }
+        //}
         public Kunde()
             :base()
         {
