@@ -1,6 +1,8 @@
-﻿namespace BarEventPlannerV2.Models
+﻿using BarEventPlannerV2.Service.Repositories.Interface;
+
+namespace BarEventPlannerV2.Models
 {
-    public class Kunde: Personoplysninger
+    public class Kunde: Personoplysninger, IUpdateFromOther<Kunde>
         // Skrevet af Andreas Dragsberg
     {
 
@@ -14,7 +16,11 @@
         {
 
         }
-    public void Bookevent()
+        public void Update(Kunde tOther)
+        {
+            //TODO
+        }
+        public void Bookevent()
         {
             //TODO
         }
