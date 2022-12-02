@@ -1,4 +1,5 @@
-﻿namespace BarEventPlannerV2.Models
+﻿using BarEventPlannerV2.Service.Repositories.Interface;
+namespace BarEventPlannerV2.Models
 {
     // TODO: ikke abstrakt endnu. Skal nok have flere properties/felter i fremtiden.
 
@@ -52,6 +53,8 @@
         /// </summary>
         public TimeSpan Tidsrum { get; set; }
 
+        public bool Godkendt { get ; set; }
+
         /// <summary>
         /// Billede/ikon til eventet.
         /// </summary>
@@ -62,7 +65,7 @@
         /// </summary>
         public Event()
         {
-
+            Godkendt = false;
         }
 
         /// <summary>
