@@ -1,7 +1,7 @@
 ﻿using BarEventPlannerV2.Models;
 using BarEventPlannerV2.Service.Repositories.Base;
 using BarEventPlannerV2.Service.Repositories.Interface;
-
+// tager fra Per Laursens Gihub og rettet til af Andreas Dragsberg
 namespace BarEventPlannerV2.Service.Repositories.Implementation
 {
     public class EventRepository : RepositoryBase<Event>, IEventRepository
