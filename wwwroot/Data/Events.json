@@ -31,5 +31,27 @@
     "StartTidspunkt": "2022-12-15T17:30:00",
     "SlutTidspunkt": "2022-12-16T19:30:00",
     "Tidsrum": "00:00:00"
+  },
+  {
+    "Id": 0,
+    "Titel": "Kims interview",
+    "PrivatEvent": false,
+    "AntalPersoner": 150,
+    "Beskrivelse": "Interview med Oliver Bjerrehus",
+    "Kommentar": "Ja tak!",
+    "StartTidspunkt": "2022-12-06T14:44:00",
+    "SlutTidspunkt": "2022-12-08T16:46:00",
+    "Tidsrum": "00:00:00"
+  },
+  {
+    "Id": 0,
+    "Titel": "Ilmersmklslkd",
+    "PrivatEvent": false,
+    "AntalPersoner": 213,
+    "Beskrivelse": "ksaljdkqwwq",
+    "Kommentar": "dasowqknmm,sanqwlqw",
+    "StartTidspunkt": "2022-12-15T14:47:00",
+    "SlutTidspunkt": "2022-12-17T17:49:00",
+    "Tidsrum": "00:00:00"
   }
 ]
