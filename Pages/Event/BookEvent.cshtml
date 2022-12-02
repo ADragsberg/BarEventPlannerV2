@@ -61,11 +61,11 @@
 				<p>Privat / Offentlig - Event</p>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
-                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="true" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="True" type="radio" id="flexRadioDefault1" checked="checked"/>
                 </div>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault2">Nej</label>
-                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="false" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="False" type="radio" id="flexRadioDefault2" />
                 </div>
             </div>
 			<div class="col">
@@ -132,7 +132,7 @@
         </div>
     </div>
 
-    
+    @*Bestil og Annuller knap*@
     <div class="row">
         <div class="col-5">
 
