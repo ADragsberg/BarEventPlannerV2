@@ -16,3 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.form-control {
+    border: 2px solid black;
+}
