@@ -5,7 +5,7 @@
     /// <summary>
     /// Base klasse for alle events (ikke abstrakt endnu).
     /// </summary>
-    public class Event
+    public class Event : IHasId
     {
         /// <summary>
         /// Unikt Id for eventet.
