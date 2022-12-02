@@ -10,10 +10,13 @@ namespace BarEventPlannerV2.Pages.Event;
 
 public class BookEventModel : PageModel
 {
-    private IEventRepository _eventService;
-    public BookEventModel(IEventRepository eventService)
+    private IEventRepository _eventRepository;
+    private IKundeRepository _kundeRepository;
+    public BookEventModel(IEventRepository eventRepository, IKundeRepository kundeRepository)
     {
-        _eventService = eventService;
+        _eventRepository = eventRepository;
+        _kundeRepository = kundeRepository; 
+
     }
 
     [BindProperty]
@@ -36,7 +39,8 @@ public class BookEventModel : PageModel
             return Page();
         }
 
-        _eventService.Create(Event);
+        _eventRepository.Create(Event);
+        _kundeRepository.Create(Kunde);
         return RedirectToPage("/Event/EventBetalt");
     }
 }
