@@ -1,0 +1,22 @@
+﻿@page
+@model BarEventPlannerV2.Pages.Event.ListOfEventCardsModel
+@{
+}
+
+<h1>List of events</h1>
+
+@if (Model.Events.Count == 0)
+{
+	<p>There are no events</p>
+}
+else
+{
+	<div class="row">
+		@foreach (var itemEvent in Model.Events)
+		{
+			<div class="row">
+				@await Html.PartialAsync("/Pages/Shared/_EventCardPartial.cshtml", itemEvent)
+			</div>
+		}
+	</div>
+}
