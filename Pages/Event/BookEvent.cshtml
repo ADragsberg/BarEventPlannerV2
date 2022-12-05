@@ -61,14 +61,14 @@ srcset="https://static.wixstatic.com/media/e84042_242cd1c37e6a48e3a33ae6b120ebf8
 		@*Privat/offentlig og antal gæster Row*@
         <div class="row mt-3">
             <div class="col inl">
-				<p>Privat / Offentlig - Event</p>
+                <p>Privat Event?</p>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
-                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="True" type="radio" id="flexRadioDefault1" checked="checked"/>
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="True" type="radio" id="flexRadioDefault1" />
                 </div>
                 <div class="form-check form-check-inline">
                     <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault2">Nej</label>
-                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="False" type="radio" id="flexRadioDefault2" />
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="False" type="radio" id="flexRadioDefault2" checked="checked" />
                 </div>
             </div>
 			<div class="col">
