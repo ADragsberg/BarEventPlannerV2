@@ -11,6 +11,9 @@
 }
 else
 {
+
+	Model.Events.Sort((x, y) => DateTime.Compare(x.StartTidspunkt, y.StartTidspunkt));
+	
 	<div class="row">
 		@foreach (var itemEvent in Model.Events)
 		{

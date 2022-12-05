@@ -5,5 +5,19 @@
     "Id": 1,
     "Email": "Trist@an.dk",
     "Telefonnummer": 66669420
+  },
+  {
+    "Fornavn": "Mikkel",
+    "Efternavn": "Christiansen",
+    "Id": 2,
+    "Email": "Mik@kel.dk",
+    "Telefonnummer": 94189430
+  },
+  {
+    "Fornavn": "Tristan",
+    "Efternavn": "Stenalt",
+    "Id": 3,
+    "Email": "Tris@tan.dk",
+    "Telefonnummer": 92810491
   }
 ]

@@ -50,13 +50,13 @@ namespace BarEventPlannerV2.Models
         /// Start tidspunkt på eventet.
         /// </summary>
         [Required(ErrorMessage = "Der skal angives et Starttidspunkt til et Event")]
-        public DateTime? StartTidspunkt { get; set; }
+        public DateTime StartTidspunkt { get; set; }
 
         /// <summary>
         /// Slut tidspunkt på eventet.
         /// </summary>
         [Required(ErrorMessage = "Der skal angives et Sluttidspunkt til et Event")]
-        public DateTime? SlutTidspunkt { get; set; }
+        public DateTime SlutTidspunkt { get; set; }
 
         /// <summary>
         /// Tidsrum for eventet.

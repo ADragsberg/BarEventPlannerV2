@@ -10,5 +10,29 @@
     "SlutTidspunkt": "2222-02-22T22:22:00",
     "Tidsrum": null,
     "Godkendt": false
+  },
+  {
+    "Id": 2,
+    "Titel": "F\u00F8dselsdagsfest",
+    "PrivatEvent": true,
+    "AntalPersoner": 14,
+    "Beskrivelse": "F\u00F8dselsdags fest for vennerne og veninderne.",
+    "Kommentar": "Ingen kommentar.",
+    "StartTidspunkt": "2022-12-08T20:00:00",
+    "SlutTidspunkt": "2022-12-09T03:00:00",
+    "Tidsrum": null,
+    "Godkendt": false
+  },
+  {
+    "Id": 3,
+    "Titel": "VM med drengene",
+    "PrivatEvent": true,
+    "AntalPersoner": 4,
+    "Beskrivelse": "Se fodbold og spis mad.",
+    "Kommentar": "Find ud af hvilken pizza fra ",
+    "StartTidspunkt": "2022-12-07T17:00:00",
+    "SlutTidspunkt": "2022-12-07T21:00:00",
+    "Tidsrum": null,
+    "Godkendt": false
   }
 ]
