@@ -84,7 +84,6 @@ namespace BarEventPlannerV2.Models
         /// <param name="id"></param>
         /// <param name="titel"></param>
         /// <param name="beskrivelse"></param>
-        /// <param name="dato"></param>
         /// <param name="tidsrum"></param>
         ///// <param name="image"></param>
         public Event(int id, int antalPersoner, string titel, bool privatEvent, string beskrivelse, string kommentar, TimeSpan tidsrum)
@@ -100,8 +99,14 @@ namespace BarEventPlannerV2.Models
         }
 
         public void Update(Event tOther)
-        {
-        //TODO
+        {           
+            Titel = tOther.Titel;
+            PrivatEvent = tOther.PrivatEvent;
+            AntalPersoner = tOther.AntalPersoner;
+            StartTidspunkt = tOther.StartTidspunkt;
+            SlutTidspunkt = tOther.SlutTidspunkt;
+            Kommentar = tOther.Kommentar;
+            Beskrivelse = tOther.Beskrivelse;
         }
 
     }
