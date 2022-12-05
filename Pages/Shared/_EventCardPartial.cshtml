@@ -8,5 +8,11 @@
         <h5 class="card-title">@Model.Titel</h5>
         <p class="card-text">@Model.Beskrivelse</p>
         <p class="card-text"><small class="text-muted">@Model.StartTidspunkt</small></p>
+		
+        <a class="btn btn-sm btn-warning" type="button" title="Edit"
+           asp-page="OpdaterEvent" asp-route-id="@Model.Id">Edit</a>
+		
+        <a class="btn btn-sm btn-danger" type="button" title="Delete"
+           asp-page="SletEvent" asp-route-id="@Model.Id">Delete</a>
     </div>
 </div>
