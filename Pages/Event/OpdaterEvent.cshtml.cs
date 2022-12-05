@@ -20,10 +20,13 @@ namespace BarEventPlannerV2.Pages.Event
         public Models.Kunde Kunde { get; set; }
         [BindProperty]
         public Models.Event Event { get; set; }
-        public IActionResult OnGet()
+        public IActionResult OnGet(int id)
         {
+            Event = _eventRepository.Read(id);
+            if (Event == null)
+                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+
             return Page();
-            ;
         }
 
         public IActionResult OnPost()
