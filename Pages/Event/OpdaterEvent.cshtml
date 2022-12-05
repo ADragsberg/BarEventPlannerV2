@@ -2,3 +2,146 @@
 @model BarEventPlannerV2.Pages.Event.OpdaterEventModel
 @{
 }
+
+<form method="post">
+    <div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
+
+        <h5 style="text-align:center">Hvem er du?</h5>
+
+
+        @*For- og efternavn Row*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Fornavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Fornavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Fornavn" class="text-danger bg-black"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Efternavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Efternavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Efternavn" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+
+        @*Email og telefonnummer Row*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Email" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Email" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Email" class="text-danger bg-black"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Telefonnummer" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Telefonnummer" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Telefonnummer" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*Start på event detaljer*@
+
+    <div class="container mt-5" style="color: white; text-shadow: 2px 2px 0px black;">
+        <h5 style="text-align:center">Book event</h5>
+
+        @*Privat/offentlig og antal gæster Row*@
+        <div class="row mt-3">
+            <div class="col inl">
+                <p>Privat Event?</p>
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="True" type="radio" id="flexRadioDefault1" />
+                </div>
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.Event.PrivatEvent" class="form-check-label" for="flexRadioDefault2">Nej</label>
+                    <input asp-for="@Model.Event.PrivatEvent" class="form-check-input" value="False" type="radio" id="flexRadioDefault2" checked="checked" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group form-group-inline">
+                    <label asp-for="@Model.Event.AntalPersoner" class="control-label"></label>
+                    <input asp-for="@Model.Event.AntalPersoner" class="form-control" />
+                    <span asp-validation-for="@Model.Event.AntalPersoner" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+        </div>
+
+        @*Row med Titel og Dag/Dato*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.Titel" class="control-label"></label>
+                    <input asp-for="@Model.Event.Titel" class="form-control" />
+                    <span asp-validation-for="@Model.Event.Titel" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+
+        </div>
+
+        @*Row med Start- og Sluttidspunkt*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.StartTidspunkt" class="control-label">Starttidspunkt</label>
+                    <input asp-for="@Model.Event.StartTidspunkt" class="form-control" />
+                    <span asp-validation-for="@Model.Event.StartTidspunkt" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.SlutTidspunkt" class="control-label">Sluttidspunkt</label>
+                    <input asp-for="@Model.Event.SlutTidspunkt" class="form-control" />
+                    <span asp-validation-for="@Model.Event.SlutTidspunkt" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+        </div>
+
+        @*Beskrivelse og kommentar boks *@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.Beskrivelse" class="control-label" for="FormControlInput1"></label>
+                    <textarea asp-for="@Model.Event.Beskrivelse" class="form-control" id="FormControlInput1" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Event.Beskrivelse" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Event.Kommentar" class="control-label" for="FormControlInput2"></label>
+                    <textarea asp-for="@Model.Event.Kommentar" class="form-control" id="FormControlInput2" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Event.Kommentar" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Bestil og Annuller knap*@
+    <div class="row">
+        <div class="col-5">
+        </div>
+        <div class="col-6">
+            <input type="submit" value="Opdater" class="btn btn-outline-primary" style="margin-left: 20px" />
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+
+</form>
+
+<p>
+    <a asp-page="/Event/ListOfEventCards">Tilbage til listen</a>
+</p>

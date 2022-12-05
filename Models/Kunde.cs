@@ -18,7 +18,12 @@ namespace BarEventPlannerV2.Models
         }
         public void Update(Kunde tOther)
         {
-            //TODO
+            Fornavn = tOther.Fornavn;
+            Efternavn = tOther.Efternavn;
+            Email =tOther.Email;
+            Telefonnummer = tOther.Telefonnummer;
+
+
         }
         public void Bookevent()
         {
