@@ -4,7 +4,7 @@ using BarEventPlannerV2.Service.Repositories.Interface;
 namespace BarEventPlannerV2.Models
 {
     public abstract class Personoplysninger : IHasId
-        //Skrevet af Andreas Dragsberg
+        // Skrevet af Andreas Dragsberg, Tristan Emil Stenalt.
     {
         public Personoplysninger()
         {
