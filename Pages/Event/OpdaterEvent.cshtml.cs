@@ -23,6 +23,7 @@ namespace BarEventPlannerV2.Pages.Event
         public IActionResult OnGet(int id)
         {
             Event = _eventRepository.Read(id);
+            Kunde = _kundeRepository.Read(id);
             if (Event == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
