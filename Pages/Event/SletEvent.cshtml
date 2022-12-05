@@ -2,3 +2,12 @@
 @model BarEventPlannerV2.Pages.Event.SletEventModel
 @{
 }
+@*<h1>Godkend Sletning></h1>*@
+
+<div class="alert alert-danger">
+    <h5>Er du sikker på, at du vil slette Event - (Id: @Model.Event.Id) (Titel: @Model.Event.Titel)</h5>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Ja</button>
+        <a class="btn btn-primary" asp-page="/Item/GetAllItems">Nej</a>
+    </form>
+</div>
