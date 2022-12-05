@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
 namespace BarEventPlannerV2.Models
-{
+{//Skrevet af Tristan og Andreas
     // TODO: Skal nok have flere properties/felter i fremtiden.
     // TODO: I fremtiden skal vi nok lave, at Event har en Kunde some felt/prop eller reference via. ID.
 
