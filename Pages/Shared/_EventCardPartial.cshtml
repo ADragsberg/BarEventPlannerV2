@@ -6,8 +6,19 @@
     @*<img src="..." class="card-img-top" alt="...">*@
     <div class="card-body">
 		
-		@*Titel*@
-        <h5 class="card-title">@Model.Titel</h5>
+		@*Titel & Id same row*@
+		<div class="row">
+			<div class="col-6">
+				<h5 class="card-title">@Model.Titel</h5>
+			</div>
+			<div class="col-6">
+				<h5 class="card-title text-end">Id: @Model.Id</h5>
+			</div>
+		</div>
+
+		
+        
+		
 
 		@*Godkendt / Status*@
 		@if (Model.Godkendt == true)
@@ -23,45 +34,43 @@
 		@*Privat*@
 		@if (Model.PrivatEvent == true)
 		{
-			<p class="card-text">Privat</p>
+			<p class="card-text">Adgang: privat</p>
 		}
 		else
 		{
-			<p class="card-text">Offentlig</p>
+			<p class="card-text">Adgang: offentlig</p>
 		}
 		
 		@*Antal Personer*@
-		<p class="card-text">Antal personer: @Model.AntalPersoner</p>
+		<p class="card-text">Antal Personer: @Model.AntalPersoner</p>
 		
 		@*Eventuel kunde*@
 		
 		
 		@*Dato*@
         @*ROW med start- og sluttidspunkt*@
-		<div class="row">
+		<div class="row mb-3">
 			<div class="col">
-				<p class="card-text"><small>Starttidspunkt: @Model.StartTidspunkt</small></p>
+				<p class="card-text text-center"><small>Starttidspunkt: @Model.StartTidspunkt</small></p>
             </div>
 			<div class="col">
-                <p class="card-text"><small>Sluttidspunkt: @Model.SlutTidspunkt</small></p>
+                <p class="card-text text-center"><small>Sluttidspunkt: @Model.SlutTidspunkt</small></p>
             </div>
 		</div>
 		
         @*<p class="card-text">@Model.Beskrivelse</p>*@
 		
-		
-		
 		@*row med edit og delete knapper*@
         <div class="row">
-			<div class="col">
+			<div class="col-4">
                 <a class="btn btn-sm btn-primary" type="button" title="Edit"
                    asp-page="GetEvent" asp-route-id="@Model.Id">Se detaljer</a>
             </div>
-			<div class="col">
+			<div class="col-4 text-center">
                 <a class="btn btn-sm btn-warning" type="button" title="Edit"
                    asp-page="OpdaterEvent" asp-route-id="@Model.Id">Edit</a>
             </div>
-            <div class="col">
+            <div class="col-4 text-end">
                 <a class="btn btn-sm btn-danger" type="button" title="Delete"
                    asp-page="SletEvent" asp-route-id="@Model.Id">Delete</a>
             </div>
