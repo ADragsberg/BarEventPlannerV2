@@ -5,33 +5,63 @@
 <div class="card mb-3">
     @*<img src="..." class="card-img-top" alt="...">*@
     <div class="card-body">
+		
+		@*Titel*@
         <h5 class="card-title">@Model.Titel</h5>
 
+		@*Godkendt / Status*@
+		@if (Model.Godkendt == true)
+		{
+			<p class="card-text text-success">Godkendt</p>
+		}
+		else
+		{
+			<p class="card-text text-warning">Afventer bekræftelse</p>
+		}
+		
+		
+		@*Privat*@
+		@if (Model.PrivatEvent == true)
+		{
+			<p class="card-text">Privat</p>
+		}
+		else
+		{
+			<p class="card-text">Offentlig</p>
+		}
+		
+		@*Antal Personer*@
+		<p class="card-text">Antal personer: @Model.AntalPersoner</p>
+		
+		@*Eventuel kunde*@
+		
+		
+		@*Dato*@
         @*ROW med start- og sluttidspunkt*@
-		<div class="row mb-3">
-			<div class="col-6">
+		<div class="row">
+			<div class="col">
 				<p class="card-text"><small>Starttidspunkt: @Model.StartTidspunkt</small></p>
             </div>
-			<div class="col-6">
+			<div class="col">
                 <p class="card-text"><small>Sluttidspunkt: @Model.SlutTidspunkt</small></p>
             </div>
 		</div>
 		
-        <p class="card-text">@Model.Beskrivelse</p>
+        @*<p class="card-text">@Model.Beskrivelse</p>*@
 		
 		
 		
 		@*row med edit og delete knapper*@
         <div class="row">
-			<div class="col-3">
+			<div class="col">
                 <a class="btn btn-sm btn-primary" type="button" title="Edit"
                    asp-page="GetEvent" asp-route-id="@Model.Id">Se detaljer</a>
             </div>
-			<div class="col-3">
+			<div class="col">
                 <a class="btn btn-sm btn-warning" type="button" title="Edit"
                    asp-page="OpdaterEvent" asp-route-id="@Model.Id">Edit</a>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <a class="btn btn-sm btn-danger" type="button" title="Delete"
                    asp-page="SletEvent" asp-route-id="@Model.Id">Delete</a>
             </div>
