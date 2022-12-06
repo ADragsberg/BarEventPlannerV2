@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model BarEventPlannerV2.Pages.Event.OpdaterEventModel
 @{
 }
@@ -127,6 +127,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+	@*id blev aldrig sat/submittet rigtigt ved form post*@
+	@*@Model.Event.Id = @RouteData.Values["id"];*@
+    <div class="form-group">
+        <label asp-for="Event.Id" class="control-label"></label>
+        <input asp-for="Event.Id" class="form-control" readonly="@(true)" />
     </div>
 
     @*Update knap*@

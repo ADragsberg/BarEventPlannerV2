@@ -33,6 +33,6 @@
     "StartTidspunkt": "2022-12-07T17:00:00",
     "SlutTidspunkt": "2022-12-07T21:00:00",
     "Tidsrum": null,
-    "Godkendt": false
+    "Godkendt": true
   }
 ]

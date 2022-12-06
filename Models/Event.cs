@@ -61,7 +61,7 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Tidsrum for eventet.
         /// </summary>
-        public TimeSpan? Tidsrum { get; set; }
+        public TimeSpan? Tidsrum { get ; set; }
 
         public bool? Godkendt { get ; set; }
 
