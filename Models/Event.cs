@@ -63,7 +63,15 @@ namespace BarEventPlannerV2.Models
         /// </summary>
         public TimeSpan? Tidsrum { get ; set; }
 
+        /// <summary>
+        /// Er et Event godkendt eller ej
+        /// </summary>
         public bool? Godkendt { get ; set; }
+
+        /// <summary>
+        /// Kunden der har booket et Event
+        /// </summary>
+        public Kunde Kunde { get; set; }
 
         /// <summary>
         /// Billede/ikon til eventet.
