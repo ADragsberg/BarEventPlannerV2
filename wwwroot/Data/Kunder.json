@@ -5,5 +5,26 @@
     "Id": 1,
     "Email": "detvirker@b\u00F8smongol.dk",
     "Telefonnummer": 66642069
+  },
+  {
+    "Fornavn": "Tristantest1",
+    "Efternavn": "dhfhgtest1",
+    "Id": 2,
+    "Email": "fdsk@lort.dk",
+    "Telefonnummer": 33333333
+  },
+  {
+    "Fornavn": "Test2",
+    "Efternavn": "Test2",
+    "Id": 3,
+    "Email": "Trist@an.dk",
+    "Telefonnummer": 34343434
+  },
+  {
+    "Fornavn": "test3",
+    "Efternavn": "test3",
+    "Id": 4,
+    "Email": "asd@dert.dk",
+    "Telefonnummer": 34849318
   }
 ]

@@ -17,5 +17,62 @@
       "Email": "detvirker@b\u00F8smongol.dk",
       "Telefonnummer": 66642069
     }
+  },
+  {
+    "Id": 2,
+    "Titel": "Test1",
+    "PrivatEvent": true,
+    "AntalPersoner": 45,
+    "Beskrivelse": "sffdsgdgftest1",
+    "Kommentar": "test1",
+    "StartTidspunkt": "1111-11-11T22:22:00",
+    "SlutTidspunkt": "3333-03-31T03:03:00",
+    "Tidsrum": null,
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "Tristantest1",
+      "Efternavn": "dhfhgtest1",
+      "Id": 2,
+      "Email": "fdsk@lort.dk",
+      "Telefonnummer": 33333333
+    }
+  },
+  {
+    "Id": 3,
+    "Titel": "test2",
+    "PrivatEvent": false,
+    "AntalPersoner": 56,
+    "Beskrivelse": "test2",
+    "Kommentar": "test2",
+    "StartTidspunkt": "2222-02-22T22:22:00",
+    "SlutTidspunkt": "2222-02-22T22:33:00",
+    "Tidsrum": null,
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "Test2",
+      "Efternavn": "Test2",
+      "Id": 3,
+      "Email": "Trist@an.dk",
+      "Telefonnummer": 34343434
+    }
+  },
+  {
+    "Id": 4,
+    "Titel": "test3",
+    "PrivatEvent": false,
+    "AntalPersoner": 5,
+    "Beskrivelse": "test3",
+    "Kommentar": "test3",
+    "StartTidspunkt": "2022-12-21T05:07:00",
+    "SlutTidspunkt": "2022-12-22T05:07:00",
+    "Tidsrum": null,
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "test3",
+      "Efternavn": "test3",
+      "Id": 4,
+      "Email": "asd@dert.dk",
+      "Telefonnummer": 34849318
+    }
   }
 ]
