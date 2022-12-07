@@ -1,6 +1,6 @@
 ﻿@using BarEventPlannerV2.Models
 @model Event
-@*Lavet af Tristan*@
+@*Lavet af Tristan og Mikkel*@
 
 <div class="card mb-3">
     @*<img src="..." class="card-img-top" alt="...">*@
@@ -15,10 +15,6 @@
 				<h5 class="card-title text-end">Id: @Model.Id</h5>
 			</div>
 		</div>
-
-		
-        
-		
 
 		@*Godkendt / Status*@
 		@if (Model.Godkendt == true)
@@ -45,35 +41,27 @@
 		<p class="card-text">Antal Personer: @Model.AntalPersoner</p>
 		
 		@*Eventuel kunde*@
-		
-		
-		@*Dato*@
-        @*ROW med start- og sluttidspunkt*@
-		<div class="row mb-3">
-			<div class="col">
-				<p class="card-text text-center"><small>Starttidspunkt: @Model.StartTidspunkt</small></p>
-            </div>
-			<div class="col">
-                <p class="card-text text-center"><small>Sluttidspunkt: @Model.SlutTidspunkt</small></p>
-            </div>
-		</div>
+
 		
         @*<p class="card-text">@Model.Beskrivelse</p>*@
 		
-		@*row med edit og delete knapper*@
+		@*row med edit og delete knapper, samt Starttidspunkt og Sluttidspunkt*@
         <div class="row">
-			<div class="col-4">
+			<div class="col-3" style="font-size:medium">
+				<p class="card-text text-start"><small>Starttidspunkt: @Model.StartTidspunkt</small></p>
+			</div>
+				<div class="col-3" style="font-size:medium">
+				<p class="card-text text-start"><small>Sluttidspunkt: @Model.SlutTidspunkt</small></p>
+			</div>
+
+            <div class="col-6 text-end">
                 <a class="btn btn-sm btn-primary" type="button" title="Edit"
                    asp-page="GetEvent" asp-route-id="@Model.Id">Se detaljer</a>
-            </div>
-			<div class="col-4 text-center">
                 <a class="btn btn-sm btn-warning" type="button" title="Edit"
                    asp-page="OpdaterEvent" asp-route-id="@Model.Id">Edit</a>
-            </div>
-            <div class="col-4 text-end">
                 <a class="btn btn-sm btn-danger" type="button" title="Delete"
                    asp-page="SletEvent" asp-route-id="@Model.Id">Delete</a>
-            </div>
+			</div>
         </div>
 		
     </div>
