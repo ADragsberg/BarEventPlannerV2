@@ -6,4 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties wwwroot_4data_4events_1json__JsonSchema="  " /></VisualStudio></ProjectExtensions>
+
 </Project>

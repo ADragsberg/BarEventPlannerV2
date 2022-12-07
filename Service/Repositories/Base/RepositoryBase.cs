@@ -1,7 +1,7 @@
 ﻿using BarEventPlannerV2.Service.Repositories.Interface;
 
 namespace BarEventPlannerV2.Service.Repositories.Base
-{ //Taget fra Per Laursens Github
+{ //Taget fra Per Laursens Github. Redigeret af Andreas Dragsberg
     public abstract class RepositoryBase<T> : IRepository<T> where T : class, IHasId, IUpdateFromOther<T>
     {
         protected Dictionary<int, T> _data;
@@ -76,7 +76,7 @@ namespace BarEventPlannerV2.Service.Repositories.Base
             return _jsonRepo.GetFromJsonFile().ToDictionary(t => t.Id, t => t);
         }
 
-        private void Save()
+        protected void Save()
         {
             _jsonRepo.SaveToJsonFile(_data.Values);
         }

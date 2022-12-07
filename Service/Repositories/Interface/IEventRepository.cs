@@ -4,5 +4,7 @@ namespace BarEventPlannerV2.Service.Repositories.Interface
 {
     public interface IEventRepository : IRepository<Event>
     {
+        void Godkend(int id, Event ev);
     }
+
 }

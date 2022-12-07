@@ -35,13 +35,15 @@ namespace BarEventPlannerV2.Pages.Event
 
         public IActionResult OnPost()
         {
+
             //if (!ModelState.IsValid)
             //{
             //    return Page();
             //}
             //else
-            Event.Godkendt = true;
-            _eventRepository.Update(Event.Id, Event);
+            _eventRepository.Godkend(Event.Id, Event);
+
+            
             return RedirectToPage("/Event/ListOfEventCards");
         }
 

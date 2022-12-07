@@ -32,11 +32,28 @@
         </div>
         <div class="col-6">
 
+          
+                @*udfylder formen skjult*@
+@*                <input type="hidden" asp-for="@Model.Kunde.Fornavn" class="form-control" />
+                <input type="hidden" asp-for="@Model.Kunde.Efternavn" class="form-control" />
+                <input type="hidden" asp-for="@Model.Kunde.Telefonnummer" class="form-control" />
+                <input type="hidden" asp-for="@Model.Kunde.Email" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.Titel" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.AntalPersoner" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.Kommentar" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.Beskrivelse" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.StartTidspunkt" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.SlutTidspunkt" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.Kunde" class="form-control" />
+                <input type="hidden" asp-for="@Model.Event.PrivatEvent" class="form-control" />
+
+*@
             <form method="post">
-                <button class="btn btn-sm btn-secondary" type="submit" title="Godkend">Godkend</button>
+                <input type="submit" value="Godkend" class="btn btn-outline-primary" />
+            </form>
                 <a class="btn btn-sm btn-danger" type="button" title="Afvis"
                    asp-page="SletEvent" asp-route-id="@Model.Event.Id">Afvis</a>
-            </form>
+
           
         </div>
         <div class="col-1">

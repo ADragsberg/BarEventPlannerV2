@@ -33,13 +33,16 @@ namespace BarEventPlannerV2.Pages.Event
 
         public IActionResult OnPost()
         {
+            Event.Kunde = Kunde;
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-
+            Event.Kunde.Id = Event.Id;
+            _kundeRepository.Update(Event.Kunde.Id, Kunde);
+            _kundeRepository.Update(Event.Kunde.Id, Event.Kunde);
             _eventRepository.Update(Event.Id, Event);
-            _kundeRepository.Update(Kunde.Id, Kunde);
+
             return RedirectToPage("/Event/listOfEventCards");
         }
     }

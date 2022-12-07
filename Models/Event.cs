@@ -115,6 +115,14 @@ namespace BarEventPlannerV2.Models
             SlutTidspunkt = tOther.SlutTidspunkt;
             Kommentar = tOther.Kommentar;
             Beskrivelse = tOther.Beskrivelse;
+            Godkendt = tOther.Godkendt;
+            Kunde = tOther.Kunde;
+
+        }
+
+        public void Godkend()
+        {
+            Godkendt = true;
         }
 
     }

@@ -33,5 +33,12 @@
     "Id": 6,
     "Email": "koen@m\u00E6lk.dk",
     "Telefonnummer": 45667777
+  },
+  {
+    "Fornavn": "b\u00F8ssefar",
+    "Efternavn": "lorter\u00F8v",
+    "Id": 7,
+    "Email": "asd@dert.dk",
+    "Telefonnummer": 42066669
   }
 ]

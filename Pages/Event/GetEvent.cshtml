@@ -7,10 +7,7 @@
 <div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
     <h1>@Model.Event.Titel</h1>
     <p>@Model.Event.StartTidspunkt - @Model.Event.SlutTidspunkt</p>
-    <h5>Kunde</h5>
-    <p>@Model.Kunde.Fornavn @Model.Kunde.Efternavn</p>
-    <p>Tlf.: @Model.Kunde.Telefonnummer</p>
-    <p>Email: @Model.Kunde.Email</p>
+
     @if (Model.Event.PrivatEvent == true)
     {
         <p>Adgang: Privat</p>
@@ -19,18 +16,29 @@
     {
         <p>Adgang: Offentlig</p>
     }
-    <h5><label asp-for="@Model.Event.Beskrivelse" class="control-label"></label></h5>
+    <h6><label asp-for="@Model.Event.Beskrivelse" class="control-label"></label></h6>
     <p>@Model.Event.Beskrivelse</p>
 
 
     
-    <h5><label asp-for="@Model.Event.Kommentar" class="control-label"></label></h5>
+    <h6><label asp-for="@Model.Event.Kommentar" class="control-label"></label></h6>
     <p>@Model.Event.Kommentar</p>
+
+    <h6>Kunde</h6>
+    <p>@Model.Kunde.Fornavn @Model.Kunde.Efternavn</p>
+    <p>Tlf.: @Model.Kunde.Telefonnummer</p>
+    <p>Email: @Model.Kunde.Email</p>
+
+    <div class="col-6 text-end">
+        <a class="btn btn-sm btn-warning" type="button" title="Edit"
+           asp-page="OpdaterEvent" asp-route-id="@Model.Event.Id">Edit</a>
+        <a class="btn btn-sm btn-danger" type="button" title="Delete"
+           asp-page="SletEvent" asp-route-id="@Model.Event.Id">Delete</a>
+    </div>
+
+
+
     
 
-    <div>
-        <div>
 
-        </div>
-    </div>
 </div>

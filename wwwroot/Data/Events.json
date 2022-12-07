@@ -9,7 +9,7 @@
     "StartTidspunkt": "1111-11-11T11:11:00",
     "SlutTidspunkt": "2222-02-22T22:22:00",
     "Tidsrum": null,
-    "Godkendt": false,
+    "Godkendt": true,
     "Kunde": {
       "Fornavn": "The Dude",
       "Efternavn": "Stenalt",
@@ -92,6 +92,25 @@
       "Id": 6,
       "Email": "koen@m\u00E6lk.dk",
       "Telefonnummer": 45667777
+    }
+  },
+  {
+    "Id": 7,
+    "Titel": "suttefest",
+    "PrivatEvent": false,
+    "AntalPersoner": 25,
+    "Beskrivelse": "fest",
+    "Kommentar": "lort",
+    "StartTidspunkt": "1111-11-11T11:11:00",
+    "SlutTidspunkt": "2222-02-22T22:22:00",
+    "Tidsrum": null,
+    "Godkendt": true,
+    "Kunde": {
+      "Fornavn": "b\u00F8ssefar",
+      "Efternavn": "lorter\u00F8v",
+      "Id": 7,
+      "Email": "asd@dert.dk",
+      "Telefonnummer": 42066669
     }
   }
 ]

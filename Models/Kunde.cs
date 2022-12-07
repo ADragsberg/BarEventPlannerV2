@@ -22,6 +22,7 @@ namespace BarEventPlannerV2.Models
             Efternavn = tOther.Efternavn;
             Email =tOther.Email;
             Telefonnummer = tOther.Telefonnummer;
+            Id = tOther.Id;
 
 
         }
