@@ -1,3 +1,4 @@
+using BarEventPlannerV2.Models;
 using BarEventPlannerV2.Service.Repositories.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -21,6 +22,10 @@ namespace BarEventPlannerV2.Pages.Event
 		[BindProperty]
 		public Models.Event Event { get; set; }
 
+		[BindProperty]
+		public Models.Kunde Kunde { get; set; }
+		
+
 		// Metoder
 		public IActionResult OnGet(int id)
 		{
@@ -36,7 +41,8 @@ namespace BarEventPlannerV2.Pages.Event
 		public IActionResult OnPost()
 		{
 			Models.Event deletedEvent = _eventRepository.Delete(Event.Id);
-			if (deletedEvent == null)
+			Models.Kunde deletedKunde = _kundeRepository.Delete(Kunde.Id);
+			if (deletedEvent == null && deletedKunde == null)
 			{
 				RedirectToPage("/NotFound"); // Redirect til NotFound siden hvis Event ikke findes
 			}

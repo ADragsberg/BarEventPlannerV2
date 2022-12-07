@@ -39,9 +39,9 @@ public class BookEventModel : PageModel
         {
             return Page();
         }
-
-        _eventRepository.Create(Event);
         _kundeRepository.Create(Kunde);
+        _eventRepository.Create(Event);
+       
         return RedirectToPage("/Event/EventBetalt");
     }
 }
