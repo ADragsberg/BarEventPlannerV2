@@ -41,7 +41,14 @@
 		<p class="card-text">Antal Personer: @Model.AntalPersoner</p>
 		
 		@*Eventuel kunde*@
-
+		<div class="row mb-3">
+			<div class="col-3">
+				<p class="card-text">Kunde: @Model.Kunde.Fornavn @Model.Kunde.Efternavn</p>
+			</div>
+			<div class="col-3">
+				<p class="card-text">Telefonnummer: @Model.Kunde.Telefonnummer</p>
+			</div>
+		</div>
 		
         @*<p class="card-text">@Model.Beskrivelse</p>*@
 		
