@@ -7,11 +7,11 @@
     "Telefonnummer": 66642069
   },
   {
-    "Fornavn": "Tristantest1",
-    "Efternavn": "dhfhgtest1",
-    "Id": 2,
+    "Fornavn": "Test4",
+    "Efternavn": "test4",
+    "Id": 5,
     "Email": "fdsk@lort.dk",
-    "Telefonnummer": 33333333
+    "Telefonnummer": 54545454
   },
   {
     "Fornavn": "Test2",
@@ -26,5 +26,12 @@
     "Id": 4,
     "Email": "asd@dert.dk",
     "Telefonnummer": 34849318
+  },
+  {
+    "Fornavn": "test5",
+    "Efternavn": "test5",
+    "Id": 6,
+    "Email": "koen@m\u00E6lk.dk",
+    "Telefonnummer": 45667777
   }
 ]
