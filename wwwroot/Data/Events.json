@@ -1,38 +1,21 @@
 [
   {
     "Id": 1,
-    "Titel": "Sut",
-    "PrivatEvent": true,
-    "AntalPersoner": 4,
-    "Beskrivelse": "asdasd",
-    "Kommentar": "asdasddd",
+    "Titel": "asd",
+    "PrivatEvent": false,
+    "AntalPersoner": 5,
+    "Beskrivelse": "sda",
+    "Kommentar": "gfg",
     "StartTidspunkt": "1111-11-11T11:11:00",
     "SlutTidspunkt": "2222-02-22T22:22:00",
     "Tidsrum": null,
-    "Godkendt": false
-  },
-  {
-    "Id": 2,
-    "Titel": "F\u00F8dselsdagsfest",
-    "PrivatEvent": true,
-    "AntalPersoner": 14,
-    "Beskrivelse": "F\u00F8dselsdags fest for vennerne og veninderne.",
-    "Kommentar": "Ingen kommentar.",
-    "StartTidspunkt": "2022-12-08T20:00:00",
-    "SlutTidspunkt": "2022-12-09T03:00:00",
-    "Tidsrum": null,
-    "Godkendt": false
-  },
-  {
-    "Id": 3,
-    "Titel": "VM med drengene",
-    "PrivatEvent": true,
-    "AntalPersoner": 4,
-    "Beskrivelse": "Se fodbold og spis mad.",
-    "Kommentar": "Find ud af hvilken pizza fra ",
-    "StartTidspunkt": "2022-12-07T17:00:00",
-    "SlutTidspunkt": "2022-12-07T21:00:00",
-    "Tidsrum": null,
-    "Godkendt": true
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "The Dude",
+      "Efternavn": "Stenalt",
+      "Id": 0,
+      "Email": "detvirker@b\u00F8smongol.dk",
+      "Telefonnummer": 66642069
+    }
   }
 ]

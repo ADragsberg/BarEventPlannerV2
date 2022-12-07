@@ -71,7 +71,7 @@ namespace BarEventPlannerV2.Models
         /// <summary>
         /// Kunden der har booket et Event
         /// </summary>
-        public Kunde Kunde { get; set; }
+        public Kunde? Kunde { get; set; }
 
         /// <summary>
         /// Billede/ikon til eventet.

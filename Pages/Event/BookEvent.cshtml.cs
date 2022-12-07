@@ -34,6 +34,7 @@ public class BookEventModel : PageModel
 
     public IActionResult OnPost()
     {
+        Event.Kunde = Kunde;
         if (!ModelState.IsValid)
         {
             return Page();
