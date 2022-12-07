@@ -1,4 +1,45 @@
-﻿@page
+﻿@page "{id:int}"
 @model BarEventPlannerV2.Pages.Event.GodkendEventModel
 @{
 }
+
+<div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
+    <h1>@Model.Event.Titel</h1>
+    <p>@Model.Event.StartTidspunkt - @Model.Event.SlutTidspunkt</p>
+    <h5>Kunde</h5>
+    <p>@Model.Kunde.Fornavn @Model.Kunde.Efternavn</p>
+    <p>Tlf.: @Model.Kunde.Telefonnummer</p>
+    <p>Email: @Model.Kunde.Email</p>
+
+    @if (Model.Event.PrivatEvent == true)
+    {
+        <p>Adgang: Privat</p>
+    }
+    else
+    {
+        <p>Adgang: Offentlig</p>
+    }
+
+    <h5><label asp-for="@Model.Event.Beskrivelse" class="control-label"></label></h5>
+    <p>@Model.Event.Beskrivelse</p>
+
+    <h5><label asp-for="@Model.Event.Kommentar" class="control-label"></label></h5>
+    <p>@Model.Event.Kommentar</p>
+    
+    @*Godkend eller afvis knap*@
+    <div class="row">
+        <div class="col-5">
+        </div>
+        <div class="col-6">
+
+            <form method="post">
+                <button class="btn btn-sm btn-secondary" type="submit" title="Godkend">Godkend</button>
+                <a class="btn btn-sm btn-danger" type="button" title="Afvis"
+                   asp-page="SletEvent" asp-route-id="@Model.Event.Id">Afvis</a>
+            </form>
+          
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+</div>
