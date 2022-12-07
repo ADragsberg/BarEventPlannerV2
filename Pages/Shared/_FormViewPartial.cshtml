@@ -1,0 +1,149 @@
+﻿@using BarEventPlannerV2.Models
+@model Event
+
+@*Baggrundsbillede*@
+<div class="Backgroundpic" style="position: absolute; z-index:-1; margin-left: 250px; margin-top: 50px;">
+    <img src="https://static.wixstatic.com/media/e84042_242cd1c37e6a48e3a33ae6b120ebf846~mv2.png/v1/fill/w_900,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Caspiers%20-%20Nyt%20logo%20(3000%20%C3%97%203000px)-5_edited.png" alt="Caspiers - Nyt logo (3000 × 3000px)-5_edited.png" style="width:600px;height:600px;object-fit:cover "
+         srcset="https://static.wixstatic.com/media/e84042_242cd1c37e6a48e3a33ae6b120ebf846~mv2.png/v1/fill/w_900,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Caspiers%20-%20Nyt%20logo%20(3000%20%C3%97%203000px)-5_edited.png" fetchpriority="high">
+</div>
+
+@*<form method="post">*@
+	
+    <div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
+
+        <h5 style="text-align:center">Hvem er du?</h5>
+
+
+        @*For- og efternavn Row*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Fornavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Fornavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Fornavn" class="text-danger bg-black"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Efternavn" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Efternavn" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Efternavn" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+
+        @*Email og telefonnummer Row*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Email" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Email" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Email" class="text-danger bg-black"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kunde.Telefonnummer" class="control-label"></label>
+                    <input asp-for="@Model.Kunde.Telefonnummer" class="form-control" />
+                    <span asp-validation-for="@Model.Kunde.Telefonnummer" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*Start på event detaljer*@
+
+    <div class="container mt-5" style="color: white; text-shadow: 2px 2px 0px black;">
+        <h5 style="text-align:center">Book event</h5>
+
+        @*Privat/offentlig og antal gæster Row*@
+        <div class="row mt-3">
+            <div class="col inl">
+                <p>Privat Event?</p>
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.PrivatEvent" class="form-check-label" for="flexRadioDefault1">Ja</label>
+                    <input asp-for="@Model.PrivatEvent" class="form-check-input" value="True" type="radio" id="flexRadioDefault1" />
+                </div>
+                <div class="form-check form-check-inline">
+                    <label asp-for="@Model.PrivatEvent" class="form-check-label" for="flexRadioDefault2">Nej</label>
+                    <input asp-for="@Model.PrivatEvent" class="form-check-input" value="False" type="radio" id="flexRadioDefault2" checked="checked" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group form-group-inline">
+                    <label asp-for="@Model.AntalPersoner" class="control-label"></label>
+                    <input asp-for="@Model.AntalPersoner" class="form-control" />
+                    <span asp-validation-for="@Model.AntalPersoner" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+        </div>
+
+        @*Row med Titel og Dag/Dato*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Titel" class="control-label"></label>
+                    <input asp-for="@Model.Titel" class="form-control" />
+                    <span asp-validation-for="@Model.Titel" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+
+        </div>
+
+        @*Row med Start- og Sluttidspunkt*@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.StartTidspunkt" class="control-label">Starttidspunkt</label>
+                    <input asp-for="@Model.StartTidspunkt" class="form-control" />
+                    <span asp-validation-for="@Model.StartTidspunkt" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.SlutTidspunkt" class="control-label">Sluttidspunkt</label>
+                    <input asp-for="@Model.SlutTidspunkt" class="form-control" />
+                    <span asp-validation-for="@Model.SlutTidspunkt" class="text-danger bg-black"></span>
+                </div>
+            </div>
+
+        </div>
+
+        @*Beskrivelse og kommentar boks *@
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Beskrivelse" class="control-label" for="FormControlInput1"></label>
+                    <textarea asp-for="@Model.Beskrivelse" class="form-control" id="FormControlInput1" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Beskrivelse" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="@Model.Kommentar" class="control-label" for="FormControlInput2"></label>
+                    <textarea asp-for="@Model.Kommentar" class="form-control" id="FormControlInput2" rows="5"></textarea>
+                    <span asp-validation-for="@Model.Kommentar" class="text-danger bg-black"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Bestil og Annuller knap*@
+    @*<div class="row">
+        <div class="col-5">
+        </div>
+        <div class="col-6">
+            <button type="submit" class="btn btn-success mt-3 px-3 d-inline">Bestil</button>
+            <button type="reset" class="btn btn-danger mt-3 d-inline">Annuller</button>
+        </div>
+        <div class="col-1">
+        </div>
+    </div>*@
+
+@*</form>*@
