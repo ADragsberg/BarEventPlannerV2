@@ -25,7 +25,7 @@ namespace BarEventPlannerV2.Pages.Event
         {
             Event = _eventRepository.Read(id);
             Kunde = _kundeRepository.Read(id);
-            if (Event == null)
+            if (Event == null || Kunde == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
             return Page();
@@ -40,7 +40,7 @@ namespace BarEventPlannerV2.Pages.Event
             }
             Event.Kunde.Id = Event.Id;
             _kundeRepository.Update(Event.Kunde.Id, Kunde);
-            _kundeRepository.Update(Event.Kunde.Id, Event.Kunde);
+            //_kundeRepository.Update(Event.Kunde.Id, Event.Kunde);
             _eventRepository.Update(Event.Id, Event);
 
             return RedirectToPage("/Event/listOfEventCards");
