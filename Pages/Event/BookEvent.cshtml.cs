@@ -24,8 +24,6 @@ public class BookEventModel : PageModel
     [BindProperty]
     public Models.Event Event { get; set; }
 
-
-
     public IActionResult OnGet()
     {
         return Page();

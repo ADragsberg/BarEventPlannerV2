@@ -2,6 +2,7 @@
 @model BarEventPlannerV2.Pages.Event.GodkendEventModel
 @{
 }
+@*Lavet af Mikkel*@
 
 <div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
     <h1>@Model.Event.Titel</h1>
@@ -32,32 +33,11 @@
         </div>
         <div class="col-6">
 
-          
-                @*udfylder formen skjult*@
-@*                <input type="hidden" asp-for="@Model.Kunde.Fornavn" class="form-control" />
-                <input type="hidden" asp-for="@Model.Kunde.Efternavn" class="form-control" />
-                <input type="hidden" asp-for="@Model.Kunde.Telefonnummer" class="form-control" />
-                <input type="hidden" asp-for="@Model.Kunde.Email" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.Titel" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.AntalPersoner" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.Kommentar" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.Beskrivelse" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.StartTidspunkt" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.SlutTidspunkt" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.Kunde" class="form-control" />
-                <input type="hidden" asp-for="@Model.Event.PrivatEvent" class="form-control" />
-
-*@
             <form method="post">
-                <input type="submit" value="Godkend" class="btn btn-outline-primary" />
+                <input type="submit" value="Godkend" class="btn btn-outline-success" />
                 <a class="btn btn-outline-danger" type="button" title="Afvis"
                    asp-page="SletEvent" asp-route-id="@Model.Event.Id">Afvis</a>
             </form>
-             
-
-          
-        </div>
-        <div class="col-1">
         </div>
     </div>
 </div>

@@ -49,8 +49,5 @@ namespace BarEventPlannerV2.Pages.Event
 
 			return RedirectToPage("/Event/ListOfEventCards");
 		}
-
-
 	}
-	
 }

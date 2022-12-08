@@ -3,6 +3,7 @@ using BarEventPlannerV2.Service.Repositories.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Xml.Linq;
+//Lavet af Mikkel og Andreas
 
 namespace BarEventPlannerV2.Pages.Event
 {

@@ -20,8 +20,6 @@ namespace BarEventPlannerV2.Pages.Event
 		[BindProperty]
 		public List<@Models.Event> Events { get; set; }
 		
-
-
 		public void OnGet()
         {
 			Events = _eventRepository.GetAll().ToList();
