@@ -2,10 +2,18 @@
 @model BarEventPlannerV2.Pages.Event.GetEventModel
 @{
 }
-@*skrevet af Andreas Dragsberg*@
+@*skrevet af Andreas Dragsberg og Tristan Stenalt*@
 
 <div class="container" style="color: white; text-shadow: 2px 2px 0px black;">
     <h1>@Model.Event.Titel</h1>
+    @if (Model.Event.Godkendt == true)
+    {
+        <p class="card-text text-success">Godkendt</p>
+    }
+    else
+    {
+        <p class="card-text text-warning">Afventer bekræftelse</p>
+    }
     <p>@Model.Event.StartTidspunkt - @Model.Event.SlutTidspunkt</p>
 
     @if (Model.Event.PrivatEvent == true)
@@ -16,15 +24,17 @@
     {
         <p>Adgang: Offentlig</p>
     }
-    <h6><label asp-for="@Model.Event.Beskrivelse" class="control-label"></label></h6>
+    <p> Antal Personer: @Model.Event.AntalPersoner</p>
+
+    <h5><label asp-for="@Model.Event.Beskrivelse" class="control-label"></label></h5>
     <p>@Model.Event.Beskrivelse</p>
 
 
     
-    <h6><label asp-for="@Model.Event.Kommentar" class="control-label"></label></h6>
+    <h5><label asp-for="@Model.Event.Kommentar" class="control-label"></label></h5>
     <p>@Model.Event.Kommentar</p>
 
-    <h6>Kunde</h6>
+    <h5>Kunde</h5>
     <p>@Model.Kunde.Fornavn @Model.Kunde.Efternavn</p>
     <p>Tlf.: @Model.Kunde.Telefonnummer</p>
     <p>Email: @Model.Kunde.Email</p>
@@ -35,10 +45,5 @@
         <a class="btn btn-sm btn-danger" type="button" title="Delete"
            asp-page="SletEvent" asp-route-id="@Model.Event.Id">Delete</a>
     </div>
-
-
-
-    
-
 
 </div>
