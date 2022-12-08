@@ -1,0 +1,30 @@
+﻿@page
+@model BarEventPlannerV2.Pages.Event.GodkendteEventsListeModel
+@{
+}
+@*Lavet af Tristan*@
+<h1>Liste over godkendte Events</h1>
+
+@if (Model.Events.Count == 0)
+{
+		<p>Der er ingen events</p>
+}
+else
+{
+	@*Bruger en liste's Sort() metode og fortæller at den skal bruge DateTime's Compare() metode til at sammenligne dato objekter*@
+	Model.Events.Sort((x, y) => DateTime.Compare(x.StartTidspunkt, y.StartTidspunkt));
+
+		<div class="row">
+		@foreach (var itemEvent in Model.Events)
+		{
+			// Kun vis, hvis eventet er godkendt (denne side er ment for en kunde/gæst til at se events)
+			if (itemEvent.Godkendt == true)
+			{
+				<div class="row">
+					@await Html.PartialAsync("/Pages/Shared/_EventCardGodkendtPartial.cshtml", itemEvent)
+				</div>
+			}
+			
+		}
+		</div>
+}

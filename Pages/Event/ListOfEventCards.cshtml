@@ -3,15 +3,15 @@
 @{
 }
 @*Lavet af Tristan*@
-<h1>List of events</h1>
+<h1>Liste over Events</h1>
 
 @if (Model.Events.Count == 0)
 {
-	<p>There are no events</p>
+	<p>Der er ingen events</p>
 }
 else
 {
-
+	@*Bruger en liste's Sort() metode og fortæller at den skal bruge DateTime's Compare() metode til at sammenligne dato objekter*@
 	Model.Events.Sort((x, y) => DateTime.Compare(x.StartTidspunkt, y.StartTidspunkt));
 	
 	<div class="row">
