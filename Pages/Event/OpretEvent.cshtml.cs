@@ -40,7 +40,7 @@ namespace BarEventPlannerV2.Pages.Event
 
             _kundeRepository.Create(Kunde);
             _eventRepository.Create(Event);
-			return RedirectToPage("/Event/EventBetalt");
+			return RedirectToPage("/Event/ListOfEventCards");
 		}
 
 	}
