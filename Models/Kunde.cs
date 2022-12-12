@@ -26,9 +26,6 @@ namespace BarEventPlannerV2.Models
 
 
         }
-        public void Bookevent()
-        {
-            //TODO
-        }
+
     }
 }
