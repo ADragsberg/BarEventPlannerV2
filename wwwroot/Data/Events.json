@@ -1,78 +1,78 @@
 [
   {
-    "Id": 1,
-    "Titel": "test0",
+    "Id": 4,
+    "Titel": "\u00D8l og Juleklip",
+    "PrivatEvent": true,
+    "AntalPersoner": 50,
+    "Beskrivelse": "Alle er velkomne. Jeg s\u00E6lger \u00E6bleskiver og materialer med til juleklip. I er ogs\u00E5 velkomne til selv at tage materialer med. ",
+    "Kommentar": "Jeg skal bruge en ovn og masser af bordplads. I kunne m\u00E5ske s\u00E6lge \u00F8l og gl\u00F8gg? ;)",
+    "StartTidspunkt": "2022-12-22T10:00:00",
+    "SlutTidspunkt": "2022-12-22T18:00:00",
+    "Tidsrum": null,
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "Tristan",
+      "Efternavn": "Stenalt",
+      "Id": 4,
+      "Email": "TS@mail.com",
+      "Telefonnummer": 34125678
+    }
+  },
+  {
+    "Id": 2,
+    "Titel": "Haslev Nyt\u00E5rsfest",
     "PrivatEvent": false,
-    "AntalPersoner": 5,
-    "Beskrivelse": "sda",
-    "Kommentar": "gfg",
-    "StartTidspunkt": "1111-11-11T11:11:00",
-    "SlutTidspunkt": "2222-02-22T22:22:00",
+    "AntalPersoner": 100,
+    "Beskrivelse": "Kom og fejr nyt\u00E5r. Med live musik og god stemning. Alle er velkomne. Fri entr\u00E9.",
+    "Kommentar": "-",
+    "StartTidspunkt": "2022-12-31T18:00:00",
+    "SlutTidspunkt": "2023-01-01T03:00:00",
     "Tidsrum": null,
     "Godkendt": true,
     "Kunde": {
-      "Fornavn": "The Dude",
-      "Efternavn": "Stenalt",
+      "Fornavn": "Caspier",
+      "Efternavn": "------",
+      "Id": 2,
+      "Email": "piratenhaslev@gmail.com",
+      "Telefonnummer": 41784777
+    }
+  },
+  {
+    "Id": 1,
+    "Titel": "Andreas\u0027 privat fest",
+    "PrivatEvent": true,
+    "AntalPersoner": 30,
+    "Beskrivelse": "S\u00E5 skal der festes.",
+    "Kommentar": "\u00D8l er p\u00E5 min regning ml. kl. 20 og 21.\r\nG\u00E6sterne k\u00F8ber selv deres drinks resten af aftenen.",
+    "StartTidspunkt": "2022-12-21T20:00:00",
+    "SlutTidspunkt": "2022-12-22T02:00:00",
+    "Tidsrum": null,
+    "Godkendt": false,
+    "Kunde": {
+      "Fornavn": "Andreas",
+      "Efternavn": "Dragsberg",
       "Id": 1,
-      "Email": "detvirker@b\u00F8smongol.dk",
-      "Telefonnummer": 66642069
+      "Email": "ad@mail.com",
+      "Telefonnummer": 12345678
     }
   },
   {
     "Id": 3,
-    "Titel": "test2",
+    "Titel": "Mikkel\u0027s Jule Rave",
     "PrivatEvent": false,
-    "AntalPersoner": 56,
-    "Beskrivelse": "test2",
-    "Kommentar": "test2",
-    "StartTidspunkt": "2222-02-22T22:22:00",
-    "SlutTidspunkt": "2222-02-22T22:33:00",
-    "Tidsrum": null,
-    "Godkendt": false,
-    "Kunde": {
-      "Fornavn": "Test2",
-      "Efternavn": "Test2",
-      "Id": 3,
-      "Email": "Trist@an.dk",
-      "Telefonnummer": 34343434
-    }
-  },
-  {
-    "Id": 6,
-    "Titel": "test5",
-    "PrivatEvent": false,
-    "AntalPersoner": 65,
-    "Beskrivelse": "test5",
-    "Kommentar": "test5",
-    "StartTidspunkt": "2222-02-22T22:22:00",
-    "SlutTidspunkt": "3333-03-31T03:33:00",
-    "Tidsrum": null,
-    "Godkendt": false,
-    "Kunde": {
-      "Fornavn": "test5",
-      "Efternavn": "test5",
-      "Id": 6,
-      "Email": "koen@m\u00E6lk.dk",
-      "Telefonnummer": 45667777
-    }
-  },
-  {
-    "Id": 7,
-    "Titel": "suttefest",
-    "PrivatEvent": false,
-    "AntalPersoner": 25,
-    "Beskrivelse": "fest",
-    "Kommentar": "lort",
-    "StartTidspunkt": "1111-11-11T11:11:00",
-    "SlutTidspunkt": "2222-02-22T22:22:00",
+    "AntalPersoner": 100,
+    "Beskrivelse": "DJ Santa Claus kommer og fyrer op for fed julestemning. \r\nBiletter k\u00F8bes i d\u00F8ren.",
+    "Kommentar": null,
+    "StartTidspunkt": "2022-12-25T21:00:00",
+    "SlutTidspunkt": "2022-12-26T02:00:00",
     "Tidsrum": null,
     "Godkendt": true,
     "Kunde": {
-      "Fornavn": "b\u00F8ssefar",
-      "Efternavn": "lorter\u00F8v",
-      "Id": 7,
-      "Email": "asd@dert.dk",
-      "Telefonnummer": 42066669
+      "Fornavn": "Mikkel",
+      "Efternavn": "Christiansen",
+      "Id": 3,
+      "Email": "MC@mail.com",
+      "Telefonnummer": 21345678
     }
   }
 ]

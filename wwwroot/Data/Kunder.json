@@ -1,30 +1,30 @@
 [
   {
-    "Fornavn": "The Dude",
+    "Fornavn": "Tristan",
     "Efternavn": "Stenalt",
+    "Id": 4,
+    "Email": "TS@mail.com",
+    "Telefonnummer": 34125678
+  },
+  {
+    "Fornavn": "Caspier",
+    "Efternavn": "------",
+    "Id": 2,
+    "Email": "piratenhaslev@gmail.com",
+    "Telefonnummer": 41784777
+  },
+  {
+    "Fornavn": "Andreas",
+    "Efternavn": "Dragsberg",
     "Id": 1,
-    "Email": "detvirker@b\u00F8smongol.dk",
-    "Telefonnummer": 66642069
+    "Email": "ad@mail.com",
+    "Telefonnummer": 12345678
   },
   {
-    "Fornavn": "Test2",
-    "Efternavn": "Test2",
+    "Fornavn": "Mikkel",
+    "Efternavn": "Christiansen",
     "Id": 3,
-    "Email": "Trist@an.dk",
-    "Telefonnummer": 34343434
-  },
-  {
-    "Fornavn": "test5",
-    "Efternavn": "test5",
-    "Id": 6,
-    "Email": "koen@m\u00E6lk.dk",
-    "Telefonnummer": 45667777
-  },
-  {
-    "Fornavn": "b\u00F8ssefar",
-    "Efternavn": "lorter\u00F8v",
-    "Id": 7,
-    "Email": "asd@dert.dk",
-    "Telefonnummer": 42066669
+    "Email": "MC@mail.com",
+    "Telefonnummer": 21345678
   }
 ]
