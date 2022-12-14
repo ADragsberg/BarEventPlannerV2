@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BarEventPlannerV2.Pages.Event
 {
+	//Lavet af Tristan, Mikkel og Andreas
     public class OpretEventModel : PageModel
     {
 		// Felter

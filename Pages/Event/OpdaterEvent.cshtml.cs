@@ -2,7 +2,7 @@ using BarEventPlannerV2.Service.Repositories.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-//Lavet af Mikkel
+//Lavet af Mikkel, Tristan og Andreas
 namespace BarEventPlannerV2.Pages.Event
 {
     public class OpdaterEventModel : PageModel

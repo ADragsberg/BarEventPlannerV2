@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BarEventPlannerV2.Pages.Event
 {
+	//Lavet af Tristan, Andreas og Mikkel
     public class SletEventModel : PageModel
     {
 		// Felter for the EventRepository and KundeRepository

@@ -6,7 +6,7 @@ using BarEventPlannerV2.Service.Repositories.Interface;
 
 namespace BarEventPlannerV2.Pages.Event;
 
-// skrevet af Andreas, Mikkel og Tristan
+// skrevet af Mikkel, Tristan og Andreas
 
 public class BookEventModel : PageModel
 {

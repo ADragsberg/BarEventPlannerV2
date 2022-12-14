@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BarEventPlannerV2.Pages.Event
-{
+{ 
+	//Lavet af Tristan
     public class GodkendteEventsListeModel : PageModel
     {
 		// Felter

@@ -2,6 +2,8 @@ using BarEventPlannerV2.Service;
 using BarEventPlannerV2.Service.Repositories.Implementation;
 using BarEventPlannerV2.Service.Repositories.Interface;
 
+// Autogenereret og rettet til af Andreas Dragsberg
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
